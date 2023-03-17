@@ -1,0 +1,85 @@
+html,
+button {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+button {
+  width: 4rem;
+  height: 4rem;
+  margin: 5px;
+  background-color: #333333;
+  color: white;
+  font-size: 26px;
+  font-weight: 600;
+  border: none;
+  border-radius: 100%;
+  transition: background-color 500ms;
+}
+
+button:active {
+  background-color: rgba(255, 255, 255, 0.623);
+  transition: background-color 100ms;
+}
+
+.orange {
+  background-color: orange;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.zero {
+  width: 8rem;
+  padding: 0 0 0 1.5rem;
+  border-radius: 2rem;
+  text-align: left;
+}
+
+.active {
+  color: orange !important;
+  background-color: white !important;
+}
+
+.input-cont,
+.controls-cont {
+  width: 304px;
+  display: flex;
+}
+.input-cont {
+  justify-content: flex-end;
+}
+
+.controls-cont {
+  display: flex;
+  flex-direction: column;
+}
+
+.controls-row {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.bottom-left {
+  margin: auto;
+}
+
+.bottom-right {
+  display: flex;
+}
+
+#displayValue {
+  margin: 5px;
+  color: white;
+  font-size: 50px;
+  font-weight: 800;
+}
