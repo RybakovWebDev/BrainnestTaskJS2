@@ -79,7 +79,7 @@ const handleInput = (e) => {
   if (input === "±" && displayValue !== "0")
     displayValue = displayValue[0] === "-" ? displayValue.substring(1) : "-" + displayValue;
   if (input === "%") displayValue = (1 / 100) * displayValue;
-  if (input === "." && displayValue === "0" && !displayValue.includes(".")) displayValue = displayValue + input;
+  if (input === "." && !displayValue.includes(".")) displayValue = displayValue + input;
   if (input === "Backspace" && displayValue !== "0") {
     displayValue = displayValue.slice(0, -1);
     !displayValue ? (displayValue = "0") : "";
